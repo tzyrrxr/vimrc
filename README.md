@@ -20,17 +20,17 @@ let g:tex_flavor = 'latex'
 
 
 ## default:
-"set rtp+=$HOME/~/.vim/bundle/Vundle.vim/
+"set rtp+=$HOME/~/.vim/bundle/Vundle.vim/  
 
 ## example:
-set rtp+=C:/Users/userName/Documents/vim/~/.vim/bundle/Vundle.vim/
+set rtp+=C:/Users/userName/Documents/vim/~/.vim/bundle/Vundle.vim/  
 
 
 ## default:
-"call vundle#begin('$HOME/.vim/bundle/')
+"call vundle#begin('$HOME/.vim/bundle/')  
 
 ## example:
-call vundle#begin('C:/Users/userName/Documents/vim/~/.vim/bundle/')
+call vundle#begin('C:/Users/userName/Documents/vim/~/.vim/bundle/')  
 
 
 
