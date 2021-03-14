@@ -31,3 +31,9 @@ set rtp+=C:/Users/userName/Documents/vim/~/.vim/bundle/Vundle.vim/
 
 ## example:
 call vundle#begin('C:/Users/userName/Documents/vim/~/.vim/bundle/')  
+
+
+
+# Notice font size
+
+Font name can not contain space and replace space to underline.
