@@ -5,9 +5,9 @@ let g:tex_flavor = 'latex'
 "let g:vimtex_compiler_method='pdflatexmk'
 
 ## example:
-"let g:vimtex_view_general_viewer = 'C:\PROGRAM_PATH\SumatraPDF.exe'
-"let g:vimtex_view_general_viewer = 'C:\PROGRAM_PATH\EvinceIcon1.exe'
-"let g:vimtex_latexmk_enabled = 1 
+"let g:vimtex_view_general_viewer = 'C:\PROGRAM_PATH\SumatraPDF.exe'  
+"let g:vimtex_view_general_viewer = 'C:\PROGRAM_PATH\EvinceIcon1.exe'  
+"let g:vimtex_latexmk_enabled = 1   
 
 
 
