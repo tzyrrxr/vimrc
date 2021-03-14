@@ -31,7 +31,3 @@ set rtp+=C:/Users/userName/Documents/vim/~/.vim/bundle/Vundle.vim/
 
 ## example:
 call vundle#begin('C:/Users/userName/Documents/vim/~/.vim/bundle/')  
-
-
-
-" ===============================
