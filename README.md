@@ -1,8 +1,8 @@
 # Setting pdf viewer path
 
 ## setting pdf viewer path
-let g:tex_flavor = 'latex'
-"let g:vimtex_compiler_method='pdflatexmk'
+let g:tex_flavor = 'latex'  
+"let g:vimtex_compiler_method='pdflatexmk'  
 
 ## example:
 "let g:vimtex_view_general_viewer = 'C:\PROGRAM_PATH\SumatraPDF.exe'  
