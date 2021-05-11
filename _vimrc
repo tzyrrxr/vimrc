@@ -76,6 +76,9 @@ set rtp+=C:/Users/Lap/Documents/vim/~/.vim/bundle/Vundle.vim/
 "call vundle#begin('$HOME/.vim/bundle/')
 call vundle#begin('C:/Users/Lap/Documents/vim/~/.vim/bundle/')
 
+" set neoclide/coc.nvim exe path
+let g:coc_node_path = 'WHERE\nodejs\node.exe'
+
 
 
 if has("multi_byte")
@@ -140,6 +143,7 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 "Plugin 'ycm-core/YouCompleteMe'
+Plugin 'neoclide/coc.nvim' " need install node
 
 
 call vundle#end()            " required

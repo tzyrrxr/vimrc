@@ -11,7 +11,10 @@ let g:tex_flavor = 'latex'
 
 
 
-
+## setting neoclide/coc.nvim
+Install node from
+https://nodejs.org/en/download/
+let g:coc_node_path = 'WHERE\nodejs\node.exe'
 
 
 
