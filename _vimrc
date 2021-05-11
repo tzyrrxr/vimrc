@@ -58,8 +58,8 @@ nnoremap <C-l> :call NumberToggle()<cr>
 "solution:
 """""""""""""""""
 "solution 1
-set shortmess=a
-set cmdheight=2
+"set shortmess=a
+"set cmdheight=2
 
 
 
@@ -70,20 +70,11 @@ set cmdheight=2
 "let g:tex_indent_items=0   "對齊
 
 
-"""""""""""""""" Setting vundle install path."
-" default:
+
 "set rtp+=$HOME/~/.vim/bundle/Vundle.vim/
-
-" example:
-set rtp+=C:/Users/userName/Documents/vim/~/.vim/bundle/Vundle.vim/
-
-
-" default:
+set rtp+=C:/Users/Lap/Documents/vim/~/.vim/bundle/Vundle.vim/
 "call vundle#begin('$HOME/.vim/bundle/')
-
-" example:
-call vundle#begin('C:/Users/userName/Documents/vim/~/.vim/bundle/')
-""""""""""""""""""""""""""""""""""""""""""""""
+call vundle#begin('C:/Users/Lap/Documents/vim/~/.vim/bundle/')
 
 
 
@@ -109,13 +100,10 @@ source $VIMRUNTIME/menu.vim
 "colorscheme desert
 "colorscheme darkblue
 
-
-
-" setting pdf viewer path
 let g:tex_flavor = 'latex'
 "let g:vimtex_compiler_method='pdflatexmk'
-"let g:vimtex_view_general_viewer = 'C:\PROGRAM_PATH\SumatraPDF.exe'
-"let g:vimtex_view_general_viewer = 'C:\PROGRAM_PATH\EvinceIcon1.exe'
+let g:vimtex_view_general_viewer = 'C:\Users\sjLin\Documents\SumatraPDF\SumatraPDF.exe'
+"let g:vimtex_view_general_viewer = 'C:\Users\sjLin\AppData\Roaming\Microsoft\Installer\{923638DC-4B4D-4678-BA52-2905B6BAA431}\EvinceIcon1.exe'
 "let g:vimtex_latexmk_enabled = 1  
 
 "原文網址：https://read01.com/D5Q4kg.html
@@ -148,7 +136,9 @@ Plugin 'scrooloose/nerdtree'
 "Plugin 'xuhdev/vim-latex-live-preview'
 Plugin 'mattn/emmet-vim' "html
 Plugin 'tmhedberg/SimpylFold'
-Plugin 'Lokaltog/powerline'
+"Plugin 'Lokaltog/powerline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 "Plugin 'ycm-core/YouCompleteMe'
 
 
