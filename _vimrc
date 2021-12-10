@@ -58,8 +58,8 @@ nnoremap <C-l> :call NumberToggle()<cr>
 "solution:
 """""""""""""""""
 "solution 1
-set shortmess=a
-set cmdheight=2
+"set shortmess=a
+"set cmdheight=2
 
 
 
@@ -70,20 +70,23 @@ set cmdheight=2
 "let g:tex_indent_items=0   "對齊
 
 
-"""""""""""""""" Setting vundle install path."
-" default:
+
+""""""""""""""""""" modify path """""""""""""""""""""""""""""""
+
 "set rtp+=$HOME/~/.vim/bundle/Vundle.vim/
-
-" example:
-set rtp+=C:/Users/userName/Documents/vim/~/.vim/bundle/Vundle.vim/
-
-
-" default:
+set rtp+=C:/~Path~/vim/~/.vim/bundle/Vundle.vim/
 "call vundle#begin('$HOME/.vim/bundle/')
+call vundle#begin('C:/~Path~/vim/~/.vim/bundle/')
 
-" example:
-call vundle#begin('C:/Users/userName/Documents/vim/~/.vim/bundle/')
-""""""""""""""""""""""""""""""""""""""""""""""
+" set neoclide/coc.nvim exe path
+let g:coc_node_path = 'WHERE\nodejs\node.exe'
+
+" latex sumatraPDF
+let g:vimtex_view_general_viewer = 'C:\~Path~\SumatraPDF.exe'
+
+" vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
@@ -109,13 +112,8 @@ source $VIMRUNTIME/menu.vim
 "colorscheme desert
 "colorscheme darkblue
 
-
-
-" setting pdf viewer path
 let g:tex_flavor = 'latex'
 "let g:vimtex_compiler_method='pdflatexmk'
-"let g:vimtex_view_general_viewer = 'C:\PROGRAM_PATH\SumatraPDF.exe'
-"let g:vimtex_view_general_viewer = 'C:\PROGRAM_PATH\EvinceIcon1.exe'
 "let g:vimtex_latexmk_enabled = 1  
 
 "原文網址：https://read01.com/D5Q4kg.html
@@ -134,7 +132,6 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -148,8 +145,11 @@ Plugin 'scrooloose/nerdtree'
 "Plugin 'xuhdev/vim-latex-live-preview'
 Plugin 'mattn/emmet-vim' "html
 Plugin 'tmhedberg/SimpylFold'
-Plugin 'Lokaltog/powerline'
+"Plugin 'Lokaltog/powerline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 "Plugin 'ycm-core/YouCompleteMe'
+Plugin 'neoclide/coc.nvim' " need install node
 
 
 call vundle#end()            " required

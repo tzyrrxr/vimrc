@@ -1,6 +1,7 @@
+# vim
+*.un~
+un~
+*.*un~
 *~
-*un~
+*.*~
 *.swp
-backup
-pull.bat
-update_to_github.bat
