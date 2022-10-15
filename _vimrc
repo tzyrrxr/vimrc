@@ -150,7 +150,9 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 "Plugin 'ycm-core/YouCompleteMe'
 Plugin 'neoclide/coc.nvim' " need install node
-
+Plugin 'vim-scripts/taglist.vim' " split a block for show macro
+Plugin 'wenlongche/SrcExpl' " display variable define
+"Plugin 'vim-scripts/cscope.vim' " cscope
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -195,3 +197,18 @@ catch
 endtry
 "********************read file auto
 set autoread
+
+"************ stop tab
+set noai
+"************ tab width
+set tabstop=1
+set shiftwidth=1
+"************ tab convert to space 
+set expandtab
+
+"************ ctags
+"set tags=./tags
+
+"************ SrcExpl
+" // Set 100 ms for refreshing the Source Explorer 
+let g:SrcExpl_refreshTime = 200 
