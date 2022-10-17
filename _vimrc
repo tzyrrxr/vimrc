@@ -153,6 +153,7 @@ Plugin 'neoclide/coc.nvim' " need install node
 Plugin 'vim-scripts/taglist.vim' " split a block for show macro
 Plugin 'wenlongche/SrcExpl' " display variable define
 "Plugin 'vim-scripts/cscope.vim' " cscope
+Plugin 'wenlongche/Trinity' " organize shortcut
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -212,3 +213,17 @@ set expandtab
 "************ SrcExpl
 " // Set 100 ms for refreshing the Source Explorer 
 let g:SrcExpl_refreshTime = 200 
+
+" // Do not let the Source Explorer update the tags file when opening 
+let g:SrcExpl_isUpdateTags = 0 
+
+" // The switch of the Source Explorer 
+"nmap <F8> :SrcExplToggle<CR>  
+nmap <F8> :TrinityToggleAll<CR>
+
+" Minimum Plugin List
+let g:SrcExpl_pluginList = [ 
+  \ "__Tag_List__", 
+  \ "_NERD_tree_",
+  \ "Source_Explorer"
+  \ ]
