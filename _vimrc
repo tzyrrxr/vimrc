@@ -209,6 +209,7 @@ set expandtab
 
 "************ ctags
 "set tags=./tags
+"set tags+=
 
 "************ SrcExpl
 " // Set 100 ms for refreshing the Source Explorer 
